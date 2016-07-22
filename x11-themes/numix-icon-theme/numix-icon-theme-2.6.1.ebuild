@@ -11,6 +11,7 @@ HOMEPAGE="https://numixproject.org"
 SRC_URI="https://github.com/numixproject/numix-gtk-theme/archive/${PV}.tar.gz"
 LICENSE="GPL-3+"
 SLOT="0"
+KEYWORDS="~amd64"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
