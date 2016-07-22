@@ -8,10 +8,12 @@ inherit git-r3
 
 DESCRIPTION="Official icon theme from the Numix project."
 HOMEPAGE="https://numixproject.org"
-SRC_URI="https://github.com/numixproject/numix-gtk-theme/archive/${PV}.tar.gz"
+SRC_URI=""
+EGIT_REPO_URI="https://github.com/numixproject/${PN}.git"
+KEYWORDS=""
+KEYWORDS="~amd64"
 LICENSE="GPL-3+"
 SLOT="0"
-KEYWORDS="~amd64"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
