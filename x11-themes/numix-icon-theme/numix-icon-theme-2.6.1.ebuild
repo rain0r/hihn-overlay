@@ -8,15 +8,7 @@ inherit git-r3
 
 DESCRIPTION="Official icon theme from the Numix project."
 HOMEPAGE="https://numixproject.org"
-
-if [[ ${PV} == "9999" ]] ; then
-	SRC_URI=""
-	EGIT_REPO_URI="https://github.com/numixproject/${PN}.git"
-	KEYWORDS=""
-else
-	SRC_URI="https://github.com/numixproject/numix-gtk-theme/archive/${PV}.tar.gz"
-fi
-
+SRC_URI="https://github.com/numixproject/numix-gtk-theme/archive/${PV}.tar.gz"
 LICENSE="GPL-3+"
 SLOT="0"
 
