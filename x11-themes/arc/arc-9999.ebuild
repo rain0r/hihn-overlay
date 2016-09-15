@@ -19,6 +19,10 @@ DEPEND="x11-themes/gnome-themes-standard
 x11-themes/gtk-engines-murrine"
 RDEPEND="${DEPEND}"
 
+# Fix for error mesage
+# configure: error: invalid GNOME version: 3.22
+EXTRA_ECONF="--with-gnome=3.20"
+
 src_prepare() {
 	eautoreconf
 }
