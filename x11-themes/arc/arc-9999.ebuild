@@ -27,6 +27,11 @@ src_prepare() {
 	eautoreconf
 }
 
+pkg_preinst() {
+	# Remove all older versions of the theme from the system
+	rm -rf /usr/share/themes/{Arc,Arc-Darker,Arc-Dark}
+}
+
 src_configure() {
 	econf \
 		$(use_enable gtk2) \

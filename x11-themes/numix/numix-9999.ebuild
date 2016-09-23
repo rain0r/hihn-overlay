@@ -24,6 +24,11 @@ DEPEND="
 
 RESTRICT="binchecks strip"
 
+pkg_preinst() {
+	# Remove all older versions of the theme from the system
+	rm -rf /usr/share/themes/numix
+}
+
 src_install() {
 	insinto /usr/share/themes/${PN}
 	doins -r *

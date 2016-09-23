@@ -27,6 +27,11 @@ src_prepare() {
 	eautoreconf
 }
 
+pkg_preinst() {
+	# Remove all older versions of the theme from the system
+	rm -rf /usr/share/themes/{Vertex,Vertex-Dark,Vertex-Light,Vertex-Gnome-Shell,Vertex-Gnome-Shell-3.16,Vertex-Cinnamon}
+}
+
 src_configure() {
 	econf \
 		$(use_enable gtk2) \
