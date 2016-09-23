@@ -8,7 +8,7 @@ inherit git-r3
 
 DESCRIPTION="modern flat theme"
 HOMEPAGE="https://github.com/numixproject/numix-gtk-theme"
-EGIT_REPO_URI="git://github.com/numixproject/numix-gtk-theme"
+EGIT_REPO_URI="ssh://git@hihn.org:3390/rain0r/numix-gtk-theme.git"
 
 LICENSE="GPL-2"
 SLOT="0"

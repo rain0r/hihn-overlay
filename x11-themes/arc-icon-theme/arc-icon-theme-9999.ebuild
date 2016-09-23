@@ -9,7 +9,7 @@ inherit git-r3 autotools
 DESCRIPTION="Icon theme"
 HOMEPAGE="https://github.com/horst3180/arc-icon-theme"
 SRC_URI=""
-EGIT_REPO_URI="https://github.com/horst3180/arc-icon-theme.git"
+EGIT_REPO_URI="ssh://git@hihn.org:3390/rain0r/arc-icon-theme.git"
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"

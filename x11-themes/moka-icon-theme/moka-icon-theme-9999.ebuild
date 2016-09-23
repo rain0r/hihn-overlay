@@ -11,7 +11,7 @@ HOMEPAGE="http://snwh.org"
 if [[ ${PV} == *9999* ]];then
 	inherit git-r3
 	SRC_URI=""
-	EGIT_REPO_URI="https://github.com/moka-project/moka-icon-theme.git"
+	EGIT_REPO_URI="ssh://git@hihn.org:3390/rain0r/moka-icon-theme.git"
 	KEYWORDS=""
 else
 	SRC_URI="https://github.com/moka-project/moka-icon-theme/archive/v${PV}/v${PV}.tar.gz -> ${P}.tar.gz"
