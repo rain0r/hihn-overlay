@@ -8,7 +8,7 @@ inherit git-r3
 DESCRIPTION="Official icon theme circle from the Numix project."
 HOMEPAGE="https://numixproject.org"
 SRC_URI=""
-EGIT_REPO_URI="ssh://git@hihn.org:3390/rain0r/numix-icon-theme-circle.git"
+EGIT_REPO_URI="https://git.hihn.org/rain0r/numix-icon-theme.git"
 KEYWORDS=""
 KEYWORDS="~amd64"
 LICENSE="GPL-3+"
