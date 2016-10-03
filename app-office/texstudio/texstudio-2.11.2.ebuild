@@ -8,7 +8,7 @@ inherit fdo-mime prefix qmake-utils
 
 DESCRIPTION="Free cross-platform LaTeX editor (fork from texmakerX)"
 HOMEPAGE="http://texstudio.sourceforge.net/"
-SRC_URI="https://up.hihn.org/media/uploadedFiles/texstudio-2.11.2.zip"
+SRC_URI="https://up.hihn.org/media/uploadedFiles/texstudio-2.11.2.7z"
 
 LICENSE="GPL-2"
 SLOT="0"
