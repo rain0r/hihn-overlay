@@ -9,7 +9,7 @@ inherit git-r3
 DESCRIPTION="Official icon theme from the Numix project."
 HOMEPAGE="https://numixproject.org"
 SRC_URI=""
-EGIT_REPO_URI="https://git.hihn.org/rain0r/numix-icon-theme.git"
+EGIT_REPO_URI="https://github.com/numixproject/numix-icon-theme"
 KEYWORDS=""
 KEYWORDS="~amd64"
 LICENSE="GPL-3+"

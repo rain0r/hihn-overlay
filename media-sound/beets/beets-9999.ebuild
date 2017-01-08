@@ -10,7 +10,7 @@ inherit distutils-r1 eutils git-r3 autotools
 MY_PV=${PV/_beta/-beta.}
 MY_P=${PN}-${MY_PV}
 DESCRIPTION="A media library management system for obsessive-compulsive music geeks"
-EGIT_REPO_URI="https://git.hihn.org/rain0r/beets.git"
+EGIT_REPO_URI="https://github.com/beetbox/beets/"
 HOMEPAGE="http://beets.radbox.org/ https://pypi.python.org/pypi/beets"
 KEYWORDS="~amd64 ~x86"
 SLOT="0"

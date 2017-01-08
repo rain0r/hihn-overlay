@@ -10,7 +10,7 @@ inherit eutils python-single-r1 git-r3
 
 DESCRIPTION="Backup system inspired by TimeVault and FlyBack, with a GUI for GNOME and KDE4"
 HOMEPAGE="http://backintime.le-web.org/"
-EGIT_REPO_URI="https://git.hihn.org:/rain0r/backintime.git"
+EGIT_REPO_URI="https://github.com/bit-team/backintime/"
 
 LICENSE="GPL-2"
 SLOT="0"
