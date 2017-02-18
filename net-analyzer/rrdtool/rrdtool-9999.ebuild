@@ -62,12 +62,12 @@ python_install() {
 }
 
 src_prepare() {
-	epatch \
-		"${FILESDIR}"/${PN}-1.4.7-configure.ac.patch \
-		"${FILESDIR}"/${PN}-1.4.9-disable-rrd_graph-cgi.patch \
-		"${FILESDIR}"/${PN}-1.4.9-disable-rrd_graph-perl.patch \
-		"${FILESDIR}"/${PN}-1.5.0_rc1-disable-rrd_graph-lua.patch \
-		"${FILESDIR}"/${PN}-1.5.0_rc1-disable-rrd_graph-python.patch
+# 	epatch \
+# 		"${FILESDIR}"/${PN}-1.4.7-configure.ac.patch \
+# 		"${FILESDIR}"/${PN}-1.4.9-disable-rrd_graph-cgi.patch \
+# 		"${FILESDIR}"/${PN}-1.4.9-disable-rrd_graph-perl.patch \
+# 		"${FILESDIR}"/${PN}-1.5.0_rc1-disable-rrd_graph-lua.patch \
+# 		"${FILESDIR}"/${PN}-1.5.0_rc1-disable-rrd_graph-python.patch
 
 	# bug 456810
 	# no time to sleep
