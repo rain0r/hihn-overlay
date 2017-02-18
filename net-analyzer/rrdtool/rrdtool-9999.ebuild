@@ -1,4 +1,3 @@
-<pre class="ebuild"># Copyright 1999-2015 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/net-analyzer/rrdtool/rrdtool-1.5.0_rc2.ebuild,v 1.3 2015/03/27 06:18:00 jer Exp $
 
@@ -174,4 +173,3 @@ pkg_postinst() {
 	ewarn ">you've upgraded from rrdtool-1.2.x and don't have any font installed to make"
 	ewarn ">lables visible, please, install some font, e.g.  media-fonts/dejavu."
 }
-</pre><!-- ajax rendered in 0.0148 seconds -->
