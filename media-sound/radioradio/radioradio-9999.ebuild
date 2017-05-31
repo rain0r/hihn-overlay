@@ -4,7 +4,7 @@
 
 EAPI=5
 
-PYTHON_COMPAT=( python3_3 python3_4 python3_5 )
+PYTHON_COMPAT=( python3_3 python3_4 python3_5 python3_6)
 inherit distutils-r1 eutils git-r3 autotools
 MY_PV=${PV/_beta/-beta.}
 MY_P=${PN}-${MY_PV}
