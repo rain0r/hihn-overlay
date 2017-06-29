@@ -22,7 +22,6 @@ CP_DEPEND="dev-java/bcprov:1.50
 	dev-java/slf4j-api:0
 	dev-java/tomcat-jstl-impl:0
 	dev-java/tomcat-jstl-spec:0
-	dev-java/java-service-wrapper:0"
 
 DEPEND="${CP_DEPEND}
 	dev-java/eclipse-ecj:*
@@ -88,7 +87,6 @@ src_prepare() {
 	# replace paths as the installer would
 	sed -i "s|%INSTALL_PATH|${I2P_ROOT}|" \
 		"${RES_DIR}/"{eepget,i2prouter,runplain.sh}  || die
-	sed -i "s|\$INSTALL_PATH|${I2P_ROOT}|" "${RES_DIR}/wrapper.config" || die
 	sed -i "s|%SYSTEM_java_io_tmpdir|${I2P_CONFIG_DIR}|" \
 		"${RES_DIR}/"{i2prouter,runplain.sh} || die
 	sed -i "s|%USER_HOME|${I2P_CONFIG_HOME}|" "${RES_DIR}/i2prouter" || die
@@ -110,7 +108,6 @@ src_install() {
 	done
 
 	# Set up symlinks for binaries
-	dosym /usr/bin/wrapper "${I2P_ROOT}/i2psvc"
 	dosym "${I2P_ROOT}/i2prouter" /usr/bin/i2prouter
 	dosym "${I2P_ROOT}/eepget" /usr/bin/eepget
 
