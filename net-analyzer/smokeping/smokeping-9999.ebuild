@@ -61,6 +61,7 @@ src_prepare() {
 }
 
 src_configure() {
+	eautoreconf
 	econf \
 		--sysconfdir=/etc/smokeping \
 		--with-htdocs-dir=/var/www/localhost/smokeping
