@@ -1,0 +1,10 @@
+DEFINED_PHASES=install unpack
+DEPEND=x11-themes/numix-icon-theme >=dev-vcs/git-1.8.2.1[curl]
+DESCRIPTION=Official icon theme circle from the Numix project.
+EAPI=5
+HOMEPAGE=https://numixproject.org
+LICENSE=GPL-3+
+RDEPEND=x11-themes/numix-icon-theme
+SLOT=0
+_eclasses_=git-r3	8f6de46b0aa318aea0e8cac62ece098b
+_md5_=b3cbc221b2657ad48c2ad985f4c7065c

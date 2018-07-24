@@ -1,0 +1,14 @@
+DEFINED_PHASES=configure install postinst postrm prepare
+DEPEND=app-text/hunspell app-text/poppler:=[qt4?,qt5?] >=dev-libs/quazip-0.7.1[qt4?,qt5?] dev-qt/qtsingleapplication[X,qt4?,qt5?] x11-libs/libX11 x11-libs/libXext qt4? ( dev-qt/designer:4 >=dev-qt/qtgui-4.8.5:4 >=dev-qt/qtcore-4.6.1:4 >=dev-qt/qtscript-4.6.1:4 >=dev-qt/qtsvg-4.6.1:4 >=dev-qt/qttest-4.6.1:4 ) qt5? ( dev-qt/designer:5 dev-qt/qtcore:5 dev-qt/qtconcurrent:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtprintsupport:5 dev-qt/qtscript:5 dev-qt/qtsvg:5 dev-qt/qttest:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 ) video? ( media-libs/phonon[qt4?,qt5?] ) virtual/pkgconfig
+DESCRIPTION=Free cross-platform LaTeX editor (fork from texmakerX)
+EAPI=5
+HOMEPAGE=http://texstudio.sourceforge.net/
+IUSE=video qt4 +qt5
+KEYWORDS=~amd64 ~ppc ~ppc64 ~x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=app-text/hunspell app-text/poppler:=[qt4?,qt5?] >=dev-libs/quazip-0.7.1[qt4?,qt5?] dev-qt/qtsingleapplication[X,qt4?,qt5?] x11-libs/libX11 x11-libs/libXext qt4? ( dev-qt/designer:4 >=dev-qt/qtgui-4.8.5:4 >=dev-qt/qtcore-4.6.1:4 >=dev-qt/qtscript-4.6.1:4 >=dev-qt/qtsvg-4.6.1:4 >=dev-qt/qttest-4.6.1:4 ) qt5? ( dev-qt/designer:5 dev-qt/qtcore:5 dev-qt/qtconcurrent:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtprintsupport:5 dev-qt/qtscript:5 dev-qt/qtsvg:5 dev-qt/qttest:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 ) video? ( media-libs/phonon[qt4?,qt5?] ) virtual/latex-base app-text/psutils app-text/ghostscript-gpl media-libs/netpbm
+REQUIRED_USE=^^ ( qt4 qt5 )
+SLOT=0
+SRC_URI=https://up.hihn.org/media/uploadedFiles/texstudio-2.11.2.7z
+_eclasses_=desktop	1b286a7e7143d8c4ec89cd0d2743a097	epatch	9a5f039771f143195164a15a4faa41a1	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	b43d08fe0771faf2f5e7be19c2789d33	fdo-mime	995b19d3f30e956b4e1bc5a91fdc4ea7	ltprune	607e058da37aa6dabfa408b7d61da72e	multilib	97f470f374f2e94ccab04a2fb21d811e	prefix	e51c7882b7b721e54e684f7eb143cbfe	preserve-libs	ef207dc62baddfddfd39a164d9797648	qmake-utils	bdf97e69a34b864d6d545f4ec3143ff7	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf
+_md5_=37f6a08604309f3f040d8284a9ddb37a

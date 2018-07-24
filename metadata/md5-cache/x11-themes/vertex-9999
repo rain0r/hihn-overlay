@@ -1,0 +1,12 @@
+DEFINED_PHASES=configure preinst prepare unpack
+DEPEND=x11-themes/gnome-themes-standard x11-themes/gtk-engines-murrine >=dev-vcs/git-1.8.2.1[curl] >=app-portage/elt-patches-20170422 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.16.1:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DESCRIPTION=Vertex is a theme for GTK 3, GTK 2, Gnome-Shell and Cinnamon.
+EAPI=5
+HOMEPAGE=https://github.com/horst3180/Vertex-theme
+IUSE=+gtk2 +gtk3 +dark +light -cinnamon -metacity -unity -xfwm -gnome-shell
+KEYWORDS=~x86 ~amd64
+LICENSE=GPL-3
+RDEPEND=x11-themes/gnome-themes-standard x11-themes/gtk-engines-murrine
+SLOT=0
+_eclasses_=autotools	d0e5375d47f4c809f406eb892e531513	git-r3	8f6de46b0aa318aea0e8cac62ece098b	libtool	0081a71a261724730ec4c248494f044d	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	1e35303c63cd707f6c3422b4493d5607
+_md5_=471f8f6ccb4a61e762044fe51b71bf77

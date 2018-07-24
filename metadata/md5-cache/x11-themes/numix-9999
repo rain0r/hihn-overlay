@@ -1,0 +1,11 @@
+DEFINED_PHASES=install unpack
+DEPEND=x11-themes/gtk-engines-murrine dev-ruby/sass >=dev-vcs/git-1.8.2.1[curl]
+DESCRIPTION=modern flat theme
+EAPI=5
+HOMEPAGE=https://github.com/numixproject/numix-gtk-theme
+LICENSE=GPL-2
+RDEPEND=x11-themes/gtk-engines-murrine dev-ruby/sass
+RESTRICT=binchecks strip
+SLOT=0
+_eclasses_=git-r3	8f6de46b0aa318aea0e8cac62ece098b
+_md5_=a62c42b61785b8e931cff2ebf6cf8eed
