@@ -6,5 +6,5 @@ HOMEPAGE=https://numixproject.org
 LICENSE=GPL-3+
 RDEPEND=x11-themes/numix-icon-theme
 SLOT=0
-_eclasses_=git-r3	8f6de46b0aa318aea0e8cac62ece098b
+_eclasses_=git-r3	918d6a744039c29af2cadc7317459765
 _md5_=b3cbc221b2657ad48c2ad985f4c7065c
