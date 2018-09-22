@@ -130,7 +130,7 @@ python_test() {
 python_install_all() {
 	distutils-r1_python_install_all
 
-	doman man/beet.1 man/beetsconfig.5
-	use doc && local HTML_DOCS=( docs/_build/html/. )
+	# doman man/beet.1 man/beetsconfig.5
+	# use doc && local HTML_DOCS=( docs/_build/html/. )
 	einstalldocs
 }
