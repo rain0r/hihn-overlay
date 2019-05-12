@@ -15,7 +15,7 @@ MY_PV="${PV}-02-unix"
 MY_P="${MY_PN}-${MY_PV}"
 MY_MV="3"
 
-# SRC_URI="http://download.sonatype.com/${MY_PN}/${MY_MV}/${MY_P}.tar.gz"
+SRC_URI="http://download.sonatype.com/${MY_PN}/${MY_MV}/${MY_P}.tar.gz"
 # SRC_URI="https://sonatype-download.global.ssl.fastly.net/repository/repositoryManager/3/nexus-3.16.1-02-unix.tar.gz"
 RESTRICT="mirror"
 KEYWORDS="~x86 ~amd64"
