@@ -40,11 +40,11 @@ RDEPEND="${DEPEND}
 		dev-java/rhino
 	)
 	)
-	container? ( dev-python/pycrypto )
+	container? ( dev-python/pycryptodome )
 	qt4? ( dev-python/PyQt4	)
 	rar? ( app-arch/unrar )
 	ssl? (
-		dev-python/pycrypto
+	    dev-python/pycryptodome
 		dev-python/pyopenssl
 	)"
 #clicknload? ( || ( ... ossp-js pyv8 ) )
