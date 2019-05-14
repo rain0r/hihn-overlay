@@ -30,23 +30,21 @@ RDEPEND="${DEPEND}
 	dev-python/simplejson
 	dev-python/pycurl
 	dev-python/jinja
+    dev-python/thrift
 	captcha? (
 		app-text/tesseract
+        dev-python/pillow
 	)
 	clicknload? (
 	|| (
 		dev-lang/spidermonkey
-		dev-java/rhino
 	)
 	)
-	container? ( dev-python/pycryptodome )
-	qt4? ( dev-python/PyQt4	)
 	rar? ( app-arch/unrar )
 	ssl? (
 	    dev-python/pycryptodome
 		dev-python/pyopenssl
 	)"
-#clicknload? ( || ( ... ossp-js pyv8 ) )
 
 S=${WORKDIR}/${PN}
 
