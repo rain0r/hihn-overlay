@@ -32,7 +32,6 @@ RDEPEND="${DEPEND}
 	dev-python/jinja
 	captcha? (
 		app-text/tesseract
-		virtual/python-imaging
 	)
 	clicknload? (
 	|| (
