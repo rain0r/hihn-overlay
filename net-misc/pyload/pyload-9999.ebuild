@@ -19,7 +19,7 @@ HOMEPAGE="http://www.pyload.org"
 #We need a review about this and find the right license.
 LICENSE="AGPL-3"
 SLOT="0"
-IUSE="captcha clicknload container qt4 rar ssl"
+IUSE="captcha clicknload rar ssl"
 
 DEPEND="app-arch/unzip"
 
