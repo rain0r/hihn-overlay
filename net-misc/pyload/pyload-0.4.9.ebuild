@@ -2,21 +2,22 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=3
+EAPI=5
 
 PYTHON_DEPEND="2"
 PYTHON_USE_WITH="sqlite"
 
-inherit base eutils python systemd
+inherit git-r3 distutils-r1
 
-SRC_URI="http://get.pyload.org/static/${PN}-src-v${PV}.zip"
+# SRC_URI="http://get.pyload.org/static/${PN}-src-v${PV}.zip"
+EGIT_REPO_URI="https://github.com/pyload/pyload.git"
 KEYWORDS="~amd64 ~x86"
 
 DESCRIPTION="A fast, lightweight and full featured download manager for many One-Click-Hosters."
 HOMEPAGE="http://www.pyload.org"
 #Upstreams says GPL but part of the source is not available to users
 #We need a review about this and find the right license.
-LICENSE="freedist"
+LICENSE="AGPL-3"
 SLOT="0"
 IUSE="captcha clicknload container qt4 rar ssl"
 
