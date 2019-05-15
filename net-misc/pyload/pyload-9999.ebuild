@@ -51,9 +51,9 @@ S=${WORKDIR}/${PN}
 PYLOAD_WORKDIR=/var/lib/pyload # (/var/lib/ in lack of a better place)
 
 pkg_setup() {
-	python_set_active_version 2
-	python_pkg_setup
-	#enewuser pyload -1 -1 ${PYLOAD_WORKDIR}
+    python-single-r1_pkg_setup  # (matches the default)
+	# python_pkg_setup
+	# enewuser pyload -1 -1 ${PYLOAD_WORKDIR}
 }
 
 src_unpack() {
