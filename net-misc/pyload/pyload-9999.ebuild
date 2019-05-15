@@ -4,12 +4,10 @@
 
 EAPI=5
 PYTHON_COMPAT=( python2_7 )
-
 PYTHON_USE_WITH="sqlite"
 
-inherit git-r3 distutils-r1 python-single-r1
+inherit git-r3 python-single-r1
 
-# SRC_URI="http://get.pyload.org/static/${PN}-src-v${PV}.zip"
 EGIT_REPO_URI="https://github.com/pyload/pyload.git"
 KEYWORDS="~amd64 ~x86"
 
