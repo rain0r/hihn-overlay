@@ -29,6 +29,7 @@ RDEPEND="
 	dev-python/unidecode[${PYTHON_USEDEP}]
 	>=media-libs/mutagen-1.33[${PYTHON_USEDEP}]
 	virtual/python-enum34[${PYTHON_USEDEP}]
+	dev-python/mediafile[${PYTHON_USEDEP}]
 	badfiles? (
 		media-libs/flac
 		media-sound/mp3val
