@@ -9,6 +9,6 @@
       <email>stefan.langenmaier@gmail.com</email>
       <name><![CDATA[Rainer Hihn]]></name>
     </owner>
-    <source type="git">git://git.hihn.org/rain0r/hihn-overlay.git</source>
+    <source type="git">https://git.hihn.org/rain0r/hihn-overlay.git</source>
   </repo>
 </repositories>
