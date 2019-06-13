@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name><![CDATA[hihn-overlay]]></name>
+    <description lang="en"><![CDATA[hihn Overlay]]></description>
+    <homepage>http://git.hihn.org/rain0r/hihn-overlay</homepage>
+    <owner type="person">
+      <email>stefan.langenmaier@gmail.com</email>
+      <name><![CDATA[Rainer Hihn]]></name>
+    </owner>
+    <source type="git">git://git.hihn.org/rain0r/hihn-overlay.git</source>
+  </repo>
+</repositories>
