@@ -8,7 +8,7 @@ EGO_PN="code.gitea.io/gitea"
 
 DESCRIPTION="A painless self-hosted Git service"
 HOMEPAGE="https://gitea.io"
-SRC_URI="https://github.com/go-gitea/gitea/archive/v${PV}.tar.gz -> ${P}.tar.gz"
+EGIT_URI="https://github.com/go-gitea/gitea.git"
 
 LICENSE="MIT"
 SLOT="0"
