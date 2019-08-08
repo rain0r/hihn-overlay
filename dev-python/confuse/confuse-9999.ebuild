@@ -3,17 +3,13 @@
 # $Header: $
 
 EAPI=7
-PYTHON_COMPAT=( python{2_7,3_{4,5,6}} )
+PYTHON_COMPAT=( python3_{6,7} )
 
 inherit git-r3 distutils-r1
 
 DESCRIPTION="A formatter for Python files"
 HOMEPAGE="https://github.com/beetbox/confuse"
-SRC_URI=""
 EGIT_REPO_URI="https://github.com/beetbox/confuse.git"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
-IUSE=""
-DEPEND=""
-RDEPEND="${DEPEND}"
