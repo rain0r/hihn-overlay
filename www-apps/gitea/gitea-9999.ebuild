@@ -6,6 +6,7 @@ EAPI=7
 DESCRIPTION=""
 HOMEPAGE=""
 SRC_URI=""
+EGIT_REPO_URI="github.com/go-gitea/gitea.git"
 
 LICENSE=""
 SLOT="0"
