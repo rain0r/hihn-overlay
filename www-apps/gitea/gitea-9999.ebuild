@@ -61,7 +61,7 @@ src_prepare() {
 		sed -i -e "s#^DB_TYPE = .*#DB_TYPE = sqlite3#" custom/conf/app.ini.sample || die
 	fi
 
-	gitea_make generate
+	#gitea_make generate
 }
 
 src_compile() {
