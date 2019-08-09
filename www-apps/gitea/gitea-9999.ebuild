@@ -16,6 +16,20 @@ IUSE=""
 DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
+
+gitea_make() {
+    local my_tags=(
+        bindata
+        $(usev pam)
+        $(usex sqlite 'sqlite sqlite_unlock_notify' '')
+    )
+    local my_makeopt=(
+        DRONE_TAG=${PV}
+        TAGS="${my_tags[@]}"
+    )
+    GOPATH=${WORKDIR}/${P}:$(get_golibdir_gopath) emake "${my_makeopt[@]}" "$@"
+}
+
 src_prepare() {
     default
     sed -i \
