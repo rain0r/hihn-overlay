@@ -4,16 +4,15 @@
 EAPI=7
 inherit golang-vcs-snapshot user git-r3
 
-EGO_PN="code.gitea.io/gitea"
-
 DESCRIPTION="A painless self-hosted Git service"
-HOMEPAGE="https://gitea.io"
 EGIT_REPO_URI="https://github.com/go-gitea/gitea.git"
-
+EGO_PN="code.gitea.io/gitea"
+EGO_SRC="github.com/go-gitea/gitea"
+HOMEPAGE="https://gitea.io"
+IUSE="pam sqlite"
+KEYWORDS="~amd64 ~arm ~arm64"
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64 ~arm ~arm64"
-IUSE="pam sqlite"
 
 COMMON_DEPEND="pam? ( sys-libs/pam )"
 DEPEND="${COMMON_DEPEND}
