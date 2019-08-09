@@ -11,7 +11,7 @@ EGIT_REPO_URI="https://github.com/go-gitea/gitea.git"
 LICENSE=""
 SLOT="0"
 KEYWORDS="~amd64"
-IUSE=""
+IUSE="pam"
 
 DEPEND=""
 RDEPEND="${DEPEND}"
