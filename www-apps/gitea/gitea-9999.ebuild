@@ -2,7 +2,8 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-inherit golang-vcs-snapshot user git-r3
+# inherit golang-vcs-snapshot user git-r3
+inherit user autotools git-r3
 
 DESCRIPTION="A painless self-hosted Git service"
 EGIT_REPO_URI="https://github.com/go-gitea/gitea.git"
