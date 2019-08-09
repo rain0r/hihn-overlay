@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
-inherit golang-vcs-snapshot systemd user
+inherit golang-vcs-snapshot user
 
 EGO_PN="code.gitea.io/gitea"
 
