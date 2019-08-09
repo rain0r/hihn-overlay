@@ -21,8 +21,8 @@ DEPEND="${COMMON_DEPEND}
 RDEPEND="${COMMON_DEPEND}
 	dev-vcs/git"
 
-DOCS=( custom/conf/app.ini.sample CONTRIBUTING.md README.md )
-S="${WORKDIR}/${P}/src/${EGO_PN}"
+#DOCS=( custom/conf/app.ini.sample CONTRIBUTING.md README.md )
+#S="${WORKDIR}/${P}/src/${EGO_PN}"
 
 pkg_setup() {
 	enewgroup git
