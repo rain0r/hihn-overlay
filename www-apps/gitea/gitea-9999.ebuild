@@ -6,7 +6,7 @@ inherit git-r3
 
 DESCRIPTION=""
 HOMEPAGE=""
-EGIT_REPO_URI="github.com/go-gitea/gitea.git"
+EGIT_REPO_URI="https://github.com/go-gitea/gitea.git"
 
 LICENSE=""
 SLOT="0"
