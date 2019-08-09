@@ -3,7 +3,7 @@
 
 EAPI=7
 # inherit golang-vcs-snapshot user git-r3
-inherit user autotools git-r3
+inherit user autotools git-r3 golang-vcs-snapshot
 
 DESCRIPTION="A painless self-hosted Git service"
 EGIT_REPO_URI="https://github.com/go-gitea/gitea.git"
