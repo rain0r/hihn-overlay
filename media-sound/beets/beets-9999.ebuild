@@ -3,7 +3,7 @@
 
 EAPI=6
 
-PYTHON_COMPAT=( python{2_7,3_{5,6}} )
+PYTHON_COMPAT=( python3_7 )
 PYTHON_REQ_USE="sqlite"
 inherit distutils-r1 eutils git-r3 autotools
 
