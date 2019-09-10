@@ -17,6 +17,7 @@ S="${WORKDIR}"
 RDEPEND=">=virtual/jdk-1.8"
 INSTALL_DIR="/opt/nexus-oss"
 SLOT=0
+A="nexus-3.18.1-01-unix.tar.gz"
 
 pkg_setup() {
 	#enewgroup <name> [gid]
@@ -77,7 +78,7 @@ pkg_postinst() {
 }
 
 pkg_nofetch() {
-	einfo "Please download nexus-3.18.1-01-unix.tar.gz and move it to"
+	einfo "Please download ${A} and move it to"
 	einfo "your distfiles directory:"
 	einfo
 	einfo "  https://www.sonatype.com/download-oss-sonatype"
