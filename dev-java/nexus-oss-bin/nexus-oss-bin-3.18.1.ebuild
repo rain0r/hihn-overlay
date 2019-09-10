@@ -14,55 +14,55 @@ RESTRICT="fetch mirror"
 KEYWORDS="~x86 ~amd64"
 IUSE=""
 S="${WORKDIR}"
-#echo "Debug: working directory: ${WORKDIR}"
 RDEPEND=">=virtual/jdk-1.8"
 INSTALL_DIR="/opt/nexus-oss"
+SLOT=0
 
 pkg_setup() {
-#enewgroup <name> [gid]
-enewgroup nexus
-#enewuser <user> [uid] [shell] [homedir] [groups] [params]
-enewuser nexus -1 /bin/bash "${INSTALL_DIR}" "nexus"
+	#enewgroup <name> [gid]
+	enewgroup nexus
+	#enewuser <user> [uid] [shell] [homedir] [groups] [params]
+	enewuser nexus -1 /bin/bash "${INSTALL_DIR}" "nexus"
 }
 
 src_unpack() {
-unpack ${A}
+	unpack ${A}
 }
 
 src_prepare() {
-cd "${S}"
-if -f "${FILESDIR}/${P}.patch"; then
-	epatch "${FILESDIR}/${P}.patch"
-fi
-epatch_user
+	cd "${S}"
+	if -f "${FILESDIR}/${P}.patch"; then
+		epatch "${FILESDIR}/${P}.patch"
+	fi
+	epatch_user
 }
 
 src_install() {
-#echo "Debug: install sonatype work dir"
-dodir ${INSTALL_DIR/nexus-oss/sonatype-work}
-insinto ${INSTALL_DIR/nexus-oss/sonatype-work}
-doins -r sonatype-work/*
+	#echo "Debug: install sonatype work dir"
+	dodir ${INSTALL_DIR/nexus-oss/sonatype-work}
+	insinto ${INSTALL_DIR/nexus-oss/sonatype-work}
+	doins -r sonatype-work/*
 
-fowners -R nexus:nexus ${INSTALL_DIR/nexus-oss/sonatype-work}
+	fowners -R nexus:nexus ${INSTALL_DIR/nexus-oss/sonatype-work}
 
-#echo "Debug: INSTALL_DIR: ${INSTALL_DIR}"
-insinto ${INSTALL_DIR}
-
-dodir ${INSTALL_DIR}/run
-dodir "/etc/init.d/"
-doins -r ${MY_P/-unix/}/*
-doins -r ${MY_P/-unix/}/.??*
-#BUG: nexus init script needs a symlink because it uses program path to find their configuration files
-dosym ${INSTALL_DIR}/bin/nexus /etc/init.d/nexus
-systemd_dounit "${FILESDIR}"/nexus-oss.service
-
-fowners -R nexus:nexus ${INSTALL_DIR}
-fperms 755 "${INSTALL_DIR}/bin/nexus"
-
-#echo "Change  NEXUS_HOME  to the absolute folder location in your  .bashrc  file, then save"
-echo NEXUS_HOME=\"${INSTALL_DIR}\" >> ${ED}/${INSTALL_DIR}/.bashrc
-fowners -R nexus:nexus ${INSTALL_DIR}/.bashrc
-fperms 644 ${INSTALL_DIR}/.bashrc
+	#echo "Debug: INSTALL_DIR: ${INSTALL_DIR}"
+	insinto ${INSTALL_DIR}
+	
+	dodir ${INSTALL_DIR}/run
+	dodir "/etc/init.d/"
+	doins -r ${MY_P/-unix/}/*
+	doins -r ${MY_P/-unix/}/.??*
+	#BUG: nexus init script needs a symlink because it uses program path to find their configuration files
+	dosym ${INSTALL_DIR}/bin/nexus /etc/init.d/nexus
+	systemd_dounit "${FILESDIR}"/nexus-oss.service
+	
+	fowners -R nexus:nexus ${INSTALL_DIR}
+	fperms 755 "${INSTALL_DIR}/bin/nexus"
+	
+	#echo "Change  NEXUS_HOME  to the absolute folder location in your  .bashrc  file, then save"
+	echo NEXUS_HOME=\"${INSTALL_DIR}\" >> ${ED}/${INSTALL_DIR}/.bashrc
+	fowners -R nexus:nexus ${INSTALL_DIR}/.bashrc
+	fperms 644 ${INSTALL_DIR}/.bashrc
 }
 
 pkg_postinst() {
