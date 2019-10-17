@@ -21,7 +21,6 @@ KEYWORDS="~amd64"
 RESTRICT="mirror"
 
 RDEPEND="$(vala_depend)
-	app-crypt/libsecret[vala]
 	dev-db/sqlite:3
 	dev-libs/gobject-introspection
 	dev-libs/json-glib
