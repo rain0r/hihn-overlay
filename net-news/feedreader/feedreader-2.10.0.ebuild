@@ -30,6 +30,7 @@ RDEPEND="$(vala_depend)
 	dev-libs/libxml2
 	media-libs/gstreamer:1.0
 	media-libs/gst-plugins-base:1.0
+	>=net-libs/gnome-online-accounts-3.20
 	net-libs/libsoup:2.4
 	net-libs/rest
 	>=net-libs/webkit-gtk-2.20:4
