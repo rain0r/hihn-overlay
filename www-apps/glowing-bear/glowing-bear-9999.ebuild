@@ -27,7 +27,7 @@ src_install() {
 	insinto "${MY_HTDOCSDIR}"
 	doins -r .
 
-	webapp_serverowned -R "${MY_HTDOCSDIR}"/apps
+	webapp_serverowned -R "${MY_HTDOCSDIR}"/htdocs
 
 	webapp_src_install
 }
