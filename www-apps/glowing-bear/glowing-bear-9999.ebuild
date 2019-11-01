@@ -7,7 +7,7 @@ inherit git-r3 webapp
 
 DESCRIPTION="A web client for WeeChat"
 HOMEPAGE="https://github.com/glowing-bear/glowing-bear"
-SRC_URI=""
+EGIT_REPO_URI="https://github.com/glowing-bear/glowing-bear"
 
 LICENSE="GPL-3"
 SLOT="0"
