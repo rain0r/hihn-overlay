@@ -14,7 +14,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~arm ~arm64 ~x86"
 IUSE=""
 
-DEPEND=""
+DEPEND="dev-cpp/oatpp:0"
 RDEPEND="${DEPEND}"
 BDEPEND=""
 
