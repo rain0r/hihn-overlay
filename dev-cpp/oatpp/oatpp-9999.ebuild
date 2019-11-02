@@ -22,6 +22,11 @@ src_prepare() {
     cmake-utils_src_prepare
 }
 
+src_test() {                                                    
+    cmake-utils_src_test                                        
+}                                                               
+
+
 src_configure() {
     local mycmakeargs=(
         -DLANG=CXX
