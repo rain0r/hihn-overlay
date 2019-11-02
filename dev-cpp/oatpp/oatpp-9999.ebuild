@@ -16,8 +16,15 @@ IUSE=""
 
 DEPEND=""
 RDEPEND="${DEPEND}"
-BDEPEND=""
+BDEPEND=">=dev-util/cmake-3.0"
 
-src_install() {
-    cmake-utils_src_install
+src_prepare() {
+    cmake-utils_src_prepare
+}
+
+src_configure() {
+    local mycmakeargs=(
+        -DLANG=CXX
+    )
+    cmake-utils_src_configure
 }
