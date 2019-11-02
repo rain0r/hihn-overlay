@@ -5,7 +5,7 @@ EAPI=7
 
 inherit cmake-utils git-r3
 
-DESCRIPTION="Modern Web Framework for C++"
+DESCRIPTION="OpenApi 3.0.0 docs + Swagger UI for oatpp services"
 HOMEPAGE="https://github.com/oatpp/oatpp-swagger"
 EGIT_REPO_URI="https://github.com/oatpp/oatpp-swagger"
 
