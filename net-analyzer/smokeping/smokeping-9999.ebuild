@@ -57,6 +57,7 @@ pkg_setup() {
 
 src_prepare() {
 	rm -r lib/{BER.pm,SNMP_Session.pm,SNMP_util.pm} # dev-perl/SNMP_Session
+	sh bootstrap
 }
 
 src_configure() {
