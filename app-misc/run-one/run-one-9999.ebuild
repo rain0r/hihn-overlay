@@ -20,5 +20,6 @@ BDEPEND=""
 
 
 src_install() {
-doins run-one
+	insinto /usr/bin/
+	doins run-one
 }
