@@ -17,3 +17,8 @@ IUSE=""
 DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
+
+
+src_install() {
+doins run-one
+}
