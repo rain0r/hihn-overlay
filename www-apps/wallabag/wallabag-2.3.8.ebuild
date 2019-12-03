@@ -37,6 +37,7 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND=">=virtual/httpd-php-5.4
+    dev-php/pecl-amqp
     net-libs/nodejs[npm]
     >=dev-lang/php-5.5[pdo,session,ctype,xml,hash,simplexml,json,gd,unicode,tidy,iconv,curl,nls,tokenizer,bcmath]
     || ( dev-lang/php[mysql] dev-lang/php[postgres] dev-lang/php[sqlite] )"
