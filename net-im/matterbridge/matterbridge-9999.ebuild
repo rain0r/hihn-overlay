@@ -7,7 +7,7 @@ inherit golang-build golang-vcs user
 
 EGO_PN="github.com/42wim/matterbridge"
 
-KEYWORDS=""
+KEYWORDS="~amd64"
 
 DESCRIPTION="Bridge between multiple chat networks"
 HOMEPAGE="https://github.com/42wim/matterbridge"
