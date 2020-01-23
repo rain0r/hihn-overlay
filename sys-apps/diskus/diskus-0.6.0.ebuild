@@ -11,6 +11,7 @@ rayon-1.2.0
 crossbeam-channel-0.3.9
 atty-0.2.13
 clap-2.33.0
+tempdir-0.3.7
 "
 
 inherit bash-completion-r1 cargo
