@@ -10,6 +10,7 @@ num-format-0.4.0
 rayon-1.0.0
 crossbeam-channel-0.3.0
 atty-0.2.13
+clap-2.33.0
 "
 
 inherit bash-completion-r1 cargo
