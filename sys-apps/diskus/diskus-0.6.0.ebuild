@@ -55,6 +55,7 @@ rand-0.4.6
 libc-0.2.62
 remove_dir_all-0.5.2
 winapi-0.3.8
+winapi-i686-pc-windows-gnu-0.4.0
 "
 
 inherit bash-completion-r1 cargo
