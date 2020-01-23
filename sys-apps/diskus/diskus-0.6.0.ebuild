@@ -7,7 +7,7 @@ CRATES="
 num_cpus-1.10.1
 humansize-1.1.0
 num-format-0.4.0
-rayon-1.0.0
+rayon-1.2.0
 crossbeam-channel-0.3.9
 atty-0.2.13
 clap-2.33.0
