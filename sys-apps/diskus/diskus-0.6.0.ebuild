@@ -9,7 +9,7 @@ humansize-1.1.0
 num-format-0.4.0
 rayon-1.0.0
 crossbeam-channel-0.3.0
-atty-0.2.14
+atty-0.2.13
 "
 
 inherit bash-completion-r1 cargo
