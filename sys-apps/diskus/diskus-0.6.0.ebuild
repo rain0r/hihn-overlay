@@ -16,6 +16,10 @@ libc-0.2.62
 winapi-0.3.8
 bitflags-1.1.0
 strsim-0.8.0
+term_size-0.3.1
+textwrap-0.11.0
+unicode-width-0.1.6
+vec_map-0.8.1
 "
 
 inherit bash-completion-r1 cargo
