@@ -3,9 +3,6 @@
 
 EAPI=7
 
-#MY_PV=${PV/_beta/-beta.}
-#MY_P=${PN}-${MY_PV}
-
 PYTHON_COMPAT=( python3_7 )
 PYTHON_REQ_USE="sqlite"
 inherit distutils-r1
@@ -74,9 +71,7 @@ DEPEND="
 "
 RDEPEND="${DEPEND}"
 
-# RESTRICT="test" # tests broken in 1.4.3 already
-
-#S="${WORKDIR}/${MY_P}"
+RESTRICT="test" # tests broken in 1.4.3 already
 
 python_prepare_all() {
 	distutils-r1_python_prepare_all
