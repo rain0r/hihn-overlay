@@ -6,7 +6,7 @@ EAPI=7
 #MY_PV=${PV/_beta/-beta.}
 #MY_P=${PN}-${MY_PV}
 
-PYTHON_COMPAT=( python3_{8} )
+PYTHON_COMPAT=( python3_8 )
 PYTHON_REQ_USE="sqlite"
 inherit distutils-r1
 
