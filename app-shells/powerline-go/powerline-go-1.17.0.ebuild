@@ -12,6 +12,7 @@ GOLANG_PKG_DEPENDENCIES=(
 	"github.com/golang/sys:37707fd -> golang.org/x"
 	"github.com/golang/text:c4d099d -> golang.org/x" #v0.2.0
 	"github.com/go-yaml/yaml:d670f94 -> gopkg.in/yaml.v2"
+	"github.com/shirou/gopsutil:a81cf97" #v2.20.4
 )
 
 inherit golang-single
