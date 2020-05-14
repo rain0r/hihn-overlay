@@ -18,11 +18,11 @@ MY_P="${PN}-${MY_PV}"
 S="${WORKDIR}/${MY_P}"
 
 if [[ ${PV} = "9999" ]]; then
-    inherit git-r3
-    EGIT_REPO_URI="https://github.com/wallabag/wallabag.git"
-    SRC_URI=""
+	inherit git-r3
+	EGIT_REPO_URI="https://github.com/wallabag/wallabag.git"
+	SRC_URI=""
 else
-    SRC_URI="https://github.com/wallabag/wallabag//archive/${PV}.tar.gz -> ${PF}.tar.gz"
+	SRC_URI="https://github.com/wallabag/wallabag/archive/${MY_PV}.tar.gz -> ${PF}.tar.gz"
 fi
 
 SRC_URI="${SRC_URI} https://getcomposer.org/composer.phar -> ${COMPOSER}"
@@ -37,48 +37,46 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND=">=virtual/httpd-php-5.4
-    dev-php/pecl-amqp
-    net-libs/nodejs[npm]
-    >=dev-lang/php-5.5[pdo,session,ctype,xml,hash,simplexml,json,gd,unicode,tidy,iconv,curl,nls,tokenizer,bcmath]
-    || ( dev-lang/php[mysql] dev-lang/php[postgres] dev-lang/php[sqlite] )"
+	net-libs/nodejs[npm]
+	>=dev-lang/php-5.5[pdo,session,ctype,xml,hash,simplexml,json,gd,unicode,tidy,iconv,curl,nls,tokenizer,bcmath]
+	|| ( dev-lang/php[mysql] dev-lang/php[postgres] dev-lang/php[sqlite] )"
 
 DEPEND=">=dev-lang/php-5.5.9"
 
 need_httpd_cgi
 
 src_unpack() {
-    if [[ -v _GIT_R3 ]]; then
-        git-r3_src_unpack
-    else
-        unpack "${PF}.tar.gz"
-    fi
-    cp "${DISTDIR}/${COMPOSER}" "${T}/" || die
+	if [[ -v _GIT_R3 ]]; then
+		git-r3_src_unpack
+	else
+		unpack "${PF}.tar.gz"
+	fi
+	cp "${DISTDIR}/${COMPOSER}" "${T}/" || die
 }
 
 src_prepare() {
-    SYMFONY_ENV=prod php -d memory_limit=-1 "${T}/${COMPOSER}" install --no-dev --optimize-autoloader --prefer-dist --no-interaction --verbose || die
-    php bin/console wallabag:install --env=prod || die
-    npm install || die
-    grunt || die
-    eapply_user
+	SYMFONY_ENV=prod php -d memory_limit=-1 "${T}/${COMPOSER}" install --no-dev --optimize-autoloader --prefer-dist --no-interaction --verbose || die
+	php bin/console wallabag:install --env=prod || die
+	npm install || die
+	grunt || die
+	eapply_user
 }
 
 src_install() {
-    webapp_src_preinst
+	webapp_src_preinst
 
-    dodoc -r docs/*
-    rm -r docs COPYING.md CREDITS.md README.md RELEASE_PROCESS.md || die
+	dodoc -r docs/*
+	rm -r docs COPYING.md CREDITS.md README.md RELEASE_PROCESS.md || die
 
-    cp -R * "${D}/${MY_HTDOCSDIR}" || die
+	cp -R * "${D}/${MY_HTDOCSDIR}" || die
 
-    webapp_src_install
+	webapp_src_install
 }
 
 pkg_postinst() {
-    elog "Install and upgrade instructions can be found here:"
-    elog "http://doc.wallabag.org/en/v2/user/installation.html"
-    elog "remove var/cache after using wabapp-config to install"
+	elog "Install and upgrade instructions can be found here:"
+	elog "http://doc.wallabag.org/en/v2/user/installation.html"
+	elog "remove var/cache after using wabapp-config to install"
 
-    webapp_pkg_postinst
+	webapp_pkg_postinst
 }
-
