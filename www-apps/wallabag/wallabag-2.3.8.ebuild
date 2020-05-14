@@ -38,7 +38,7 @@ IUSE=""
 
 RDEPEND=">=virtual/httpd-php-7.4
 	net-libs/nodejs[npm]
-	>=dev-lang/php-7.4[pdo,session,ctype,xml,hash,simplexml,json,gd,unicode,iconv,curl,nls,tokenizer,bcmath]
+	>=dev-lang/php-7.4[pdo,session,ctype,xml,simplexml,json,gd,unicode,iconv,curl,nls,tidy,tokenizer,bcmath]
 	|| ( dev-lang/php[mysql] dev-lang/php[postgres] dev-lang/php[sqlite] )"
 
 DEPEND=">=dev-lang/php-7.4.0"
