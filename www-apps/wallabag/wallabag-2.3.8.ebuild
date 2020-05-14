@@ -36,12 +36,12 @@ KEYWORDS="~amd64 ~x86"
 
 IUSE=""
 
-RDEPEND=">=virtual/httpd-php-5.4
+RDEPEND=">=virtual/httpd-php-7.4
 	net-libs/nodejs[npm]
-	>=dev-lang/php-5.5[pdo,session,ctype,xml,hash,simplexml,json,gd,unicode,tidy,iconv,curl,nls,tokenizer,bcmath]
+	>=dev-lang/php-7.4[pdo,session,ctype,xml,hash,simplexml,json,gd,unicode,tidy,iconv,curl,nls,tokenizer,bcmath]
 	|| ( dev-lang/php[mysql] dev-lang/php[postgres] dev-lang/php[sqlite] )"
 
-DEPEND=">=dev-lang/php-5.5.9"
+DEPEND=">=dev-lang/php-7.4.0"
 
 need_httpd_cgi
 
