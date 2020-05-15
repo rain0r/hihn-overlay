@@ -17,13 +17,9 @@ MY_PV="${MY_PV/beta/beta.}"
 MY_P="${PN}-${MY_PV}"
 S="${WORKDIR}/${MY_P}"
 
-if [[ ${PV} = "9999" ]]; then
-	inherit git-r3
-	EGIT_REPO_URI="https://github.com/wallabag/wallabag.git"
-	SRC_URI=""
-else
-	SRC_URI="https://github.com/wallabag/wallabag/archive/${MY_PV}.tar.gz -> ${PF}.tar.gz"
-fi
+inherit git-r3
+EGIT_REPO_URI="https://github.com/wallabag/wallabag.git"
+SRC_URI=""
 
 SRC_URI="${SRC_URI} https://getcomposer.org/composer.phar -> ${COMPOSER}"
 
