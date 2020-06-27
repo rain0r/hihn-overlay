@@ -14,3 +14,4 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
 DISTUTILS_USE_SETUPTOOLS=pyproject.toml
+RDEPEND="dev-python/pyproject2setuppy"
