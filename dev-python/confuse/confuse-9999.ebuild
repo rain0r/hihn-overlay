@@ -13,3 +13,4 @@ EGIT_REPO_URI="https://github.com/beetbox/confuse.git"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
+DISTUTILS_USE_SETUPTOOLS=pyproject.toml
