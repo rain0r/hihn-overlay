@@ -7,7 +7,7 @@ PYTHON_COMPAT=(python3_{6..9})
 
 DISTUTILS_USE_SETUPTOOLS=rdepend
 
-inherit bash-completion-r1 distutils-r1 readme.gentoo-r1
+inherit bash-completion-r1 distutils-r1 readme.gentoo-r1 git-r3
 
 DESCRIPTION="Download videos from YouTube.com (and more sites...)"
 HOMEPAGE="https://youtube-dl.org/ https://github.com/ytdl-org/youtube-dl/"
