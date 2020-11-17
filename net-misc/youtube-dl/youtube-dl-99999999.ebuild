@@ -24,11 +24,6 @@ RDEPEND="
 
 distutils_enable_tests nose
 
-src_prepare() {
-	sed -i -e '/flake8/d' Makefile || die
-	distutils-r1_src_prepare
-}
-
 python_test() {
 	emake offlinetest
 }
