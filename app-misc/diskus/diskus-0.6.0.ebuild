@@ -20,6 +20,7 @@ term_size-0.3.1
 textwrap-0.11.0
 unicode-width-0.1.6
 vec_map-0.8.1
+ansi_term-0.11.0
 ${P}
 "
 
