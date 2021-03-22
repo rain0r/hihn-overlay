@@ -8,7 +8,7 @@ num_cpus-1.13.0
 humansize-1.1.0
 num-format-0.4.0
 rayon-1.5.0
-crossbeam-channel-0.3.0
+crossbeam-channel-0.3.9
 atty-0.2.13
 clap-2.33.0
 ${P}
