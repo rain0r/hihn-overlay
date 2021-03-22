@@ -12,7 +12,7 @@ crossbeam-channel-0.3.9
 atty-0.2.13
 clap-2.33.0
 tempdir-0.3.7
-libc-0.2.26
+libc-0.2.62
 ${P}
 "
 
