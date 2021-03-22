@@ -10,6 +10,7 @@ num-format-0.4.0
 rayon-1.5.0
 crossbeam-channel-0.5.0
 atty-0.2.13
+clap-2.33.0
 ${P}
 "
 
