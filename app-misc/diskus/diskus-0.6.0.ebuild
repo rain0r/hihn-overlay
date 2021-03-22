@@ -29,7 +29,6 @@ either-1.5.3
 rayon-core-1.6.0
 rand-0.4.6
 remove_dir_all-0.5.2
-winapi-i686-pc-windows-gnu-0.4.0
 ${P}
 "
 
