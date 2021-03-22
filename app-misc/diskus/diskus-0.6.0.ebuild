@@ -23,6 +23,7 @@ vec_map-0.8.1
 ansi_term-0.11.0
 crossbeam-utils-0.6.6
 arrayvec-0.4.11
+itoa-0.4.4
 ${P}
 "
 
