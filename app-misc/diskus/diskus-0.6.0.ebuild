@@ -25,6 +25,7 @@ crossbeam-utils-0.6.6
 arrayvec-0.4.11
 itoa-0.4.4
 crossbeam-deque-0.7.1
+either-1.5.3
 ${P}
 "
 
