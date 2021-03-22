@@ -14,6 +14,7 @@ clap-2.33.0
 tempdir-0.3.7
 libc-0.2.62
 winapi-0.3.8
+bitflags-1.1.0
 ${P}
 "
 
