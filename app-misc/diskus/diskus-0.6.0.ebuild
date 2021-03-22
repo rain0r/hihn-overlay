@@ -4,12 +4,12 @@
 EAPI=7
 
 CRATES="
-num_cpus-1.0
-humansize-1.1
-num-format-0.4
-rayon-1.0
-crossbeam-channel-0.3
-atty-0.2
+num_cpus-1.13.0
+humansize-1.1.0
+num-format-0.4.0
+rayon-1.5.0
+crossbeam-channel-0.5.0
+atty-0.2.14
 ${P}
 "
 
