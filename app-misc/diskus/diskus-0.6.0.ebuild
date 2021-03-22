@@ -4,7 +4,7 @@
 EAPI=7
 
 CRATES="
-num_cpus-1.13.0
+num_cpus-1.10.1
 humansize-1.1.0
 num-format-0.4.0
 rayon-1.5.0
