@@ -95,8 +95,6 @@ python_prepare_all() {
 	rm test/test_embyupdate.py || die "Failed to remove test_embyupdate.py"
 	rm test/test_lastgenre.py || die "Failed to remove test_lastgenre.py"
 	rm test/test_spotify.py || die "Failed to remove test_spotify.py"
-	# Not working and dropped in master
-	rm test/test_mediafile.py || die "Failed to remove test_mediafile.py"
 }
 
 python_compile_all() {
