@@ -104,7 +104,6 @@ python_compile_all() {
 python_install_all() {
 	distutils-r1_python_install_all
 
-	doman man/*
 	use doc && local HTML_DOCS=( docs/build/html/. )
 	einstalldocs
 
