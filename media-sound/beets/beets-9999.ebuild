@@ -30,6 +30,11 @@ IUSE="doc test"
 RESTRICT="!test? ( test )"
 
 RDEPEND="
+    dev-python/pyacoustid
+    dev-python/pylast
+    dev-python/python-mpd
+    dev-python/confuse
+    dev-python/mediafile
 	$(python_gen_cond_dep '
 		>=dev-python/jellyfish-0.7.1[${PYTHON_MULTI_USEDEP}]
 		dev-python/munkres[${PYTHON_MULTI_USEDEP}]
