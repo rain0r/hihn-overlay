@@ -27,7 +27,6 @@ RDEPEND="
 	>=dev-python/six-1.9[${PYTHON_USEDEP}]
 	dev-python/unidecode[${PYTHON_USEDEP}]
 	>=media-libs/mutagen-1.33[${PYTHON_USEDEP}]
-	virtual/python-enum34[${PYTHON_USEDEP}]
 	dev-python/mediafile[${PYTHON_USEDEP}]
 	dev-python/confuse[${PYTHON_USEDEP}]
 	badfiles? (
